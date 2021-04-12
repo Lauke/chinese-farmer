@@ -5,40 +5,48 @@
             <meta name="description" content="The Story of the Chinese Farmer">
             <meta name="keywords" content="HTML, CSS">
             <meta name="author" content="Laurent Bosteels">
-            <meta http-equiv="refresh" content="30">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
             <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+            <link rel="apple-touch-icon" href="apple-touch-icon.png">
             <title>The Story of the Chinese Farmer</title>
         </head>
         <body>
 <main>
+
 <article>
-  <header><h1>The Story of the Chinese Farmer</h1>
+ 
+   <header>
+      <figure class="header-image">
+         <img src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="spray">
+         <figcaption>Random guy spraying a fire extinguisher</figcaption>
+      </figure><h1>The Story of the Chinese Farmer</h1>
+   <address class="author">By <a rel="noopener" class="author" target="_blank" href="https://twitter.com/alexandregorius" title="Alexandre Gorius on Twitter">Alexandre Gorius</a></address> 
+   on <time datetime="2016-05-11">11 may 2016</time> </header>
+</header>
 
-   <address class="author">By <a rel="author" class="author" target="_blank" href="https://twitter.com/alexandregorius" title="Alexandre Gorius on Twitter">Alexandre Gorius</a></address> 
-   on <time datetime="2016-05-11">11 may 2016</time>
-</header> 
-
-   <figure>
-      <img src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="spray">
-      <figcaption>Random guy spraying a fire extinguisher</figcaption>
-   </figure>
-
+<section>
    <h2>Preamble</h2>
    <ul><li>read this once</li>
       <li>then read it again</li>
       <li>then tell it to your best friend</li>
-   </ul> 
+   </ul>
+</section>
 
 <section>
-<h2>The story</h2>
-<blockquote>
-   <p>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, <q>We are so sorry to hear your horse has run away. This is most unfortunate.</q> The farmer said, <q><em>Maybe</em>.</q> The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, <q>Oh, isn’t that lucky. What a great turn of events. You now have eight horses!</q> The farmer again said, <q><em>Maybe</em>.</q></p>
-   <p>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said, <q>Oh dear, that’s too <strong class="bad">Bad</strong> ,</q> and the farmer responded, <q><em>Maybe</em>.</q> The next day the conscription officers came around to conscript people into the army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said, <q>Isn’t that great!</q> Again, he said, <q><em>Maybe</em>.</q></p>
-   <p>The whole process of nature is an integrated process of immense complexity, and it’s really impossible to tell whether anything that happens in it is <strong class="good">Good</strong>  or <strong class="bad">Bad</strong>  — because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of <strong class="good">Good</strong>  fortune.</p>
-
-<cite><a href="https://en.wikipedia.org/wiki/Alan_Watts" rel="author" class="author" target="_blank" title="Alan Watts on Wikipedia">Alan Watts</a></cite>
-</blockquote>
+   <h2>The story</h2>
+   <p>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, <q class="villager">We are so sorry to hear your horse has run away. This is most unfortunate.</q> The farmer said, <q class="farmer"><em>Maybe</em>.</q> The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, <q class="villager">Oh, isn’t that lucky. What a great turn of events. You now have eight horses!</q> The farmer again said, <q class="farmer"><em>Maybe</em>.</q></p>
+   <p>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said, <q class="villager">Oh dear, that’s too <strong class="bad">Bad</strong> ,</q> and the farmer responded, <q class="farmer"><em>Maybe</em>.</q> The next day the conscription officers came around to conscript people into the army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said, <q class="villager">Isn’t that great!</q> Again, he said, <q class="farmer"><em>Maybe</em>.</q></p>
+   
+   <figure class="blockquote">
+      <blockquote cite="https://en.wikipedia.org/wiki/Alan_Watts" rel="author" class="author" title="Alan Watts on Wikipedia">
+          <p>The whole process of nature is an integrated process of immense complexity, and it’s really impossible to tell whether anything that happens in it is <strong class="good">Good</strong>  or <strong class="bad">Bad</strong>  — because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of <strong class="good">Good</strong>  fortune.</p>
+      </blockquote>
+      <figcaption>—<a href="https://en.wikipedia.org/wiki/Alan_Watts" target="_blank" title="bio Alan Watts" rel="noopener">Alan Watts</a>, <cite>The Story of the Chinese Farmer</cite></figcaption>
+  </figure>
+  
 </section>
 
 <section>
@@ -74,9 +82,10 @@
 
 </article>
 </main>
+
 <footer>
    <small>Copyright Just Another Company 2017. All right reserved. <br>
-      Adapted from this article: <a href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/" target="_blank" title="Original article can be found here">https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/</a>
+      Adapted from this article: <a href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/" rel="noopener" target="_blank" title="Original article can be found here">https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/</a>
    </small>
 </footer>
 </body>
